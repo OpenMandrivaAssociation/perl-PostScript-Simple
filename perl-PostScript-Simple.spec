@@ -1,15 +1,15 @@
 %define upstream_name	 PostScript-Simple
-%define upstream_version 0.07
+%define upstream_version 0.09
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Produce PostScript files from Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/PostScript-Simple
+Source0:	https://cpan.metacpan.org/authors/id/M/MC/MCNEWTON/PostScript-Simple-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
