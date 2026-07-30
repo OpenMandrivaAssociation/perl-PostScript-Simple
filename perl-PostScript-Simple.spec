@@ -1,13 +1,14 @@
 %define upstream_name	 PostScript-Simple
+%define upstream_version 0.09
 Name:		perl-%{upstream_name}
 Version:	0.09
-Release:	2
+Release:	1
 
 Summary:	Produce PostScript files from Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/PostScript-Simple
-Source0:	https://cpan.metacpan.org/authors/id/M/MC/MCNEWTON/PostScript-Simple-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MC/MCNEWTON/PostScript-Simple-0.09.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,26 +38,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/PostScript/*
 %{_mandir}/*/*
 
-
-%changelog
-* Mon Aug 03 2009 Jérôme Quelin <jquelin@mandriva.org> 0.70.0-1mdv2010.0
-+ Revision: 408032
-- rebuild using %0.09 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.07-4mdv2009.0
-+ Revision: 241845
-- rebuild
-- kill re-definition of %%buildroot on Pixel's request
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-* Tue May 08 2007 Olivier Thauvin <nanardon@mandriva.org> 0.07-2mdv2008.0
-+ Revision: 25106
-- rebuild
-
-
-* Wed Mar 22 2006 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.07-1mdk
-- 0.07
-
-* Thu Jan 06 2005 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.06-1mdk
-- Initial MDK release.
 
